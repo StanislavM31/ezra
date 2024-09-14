@@ -1,28 +1,31 @@
 <?php
 
 
-<html>
+$array123 = array(1, 1, 1, 1,  1, 8 => 1,  4 => 1, 19, 3 => 13);
 
-<head>
-    <title>Авторизация</title>
-    <link rel="stylesheet" href="./style.css">
-    <meta charset="UTF-8">
-</head>
+$array11 = array(
+    1    => "a",
+    "1"  => "b",
+    1.5  => "c",
+    true => "d",
+);
 
-<body>
+foreach ($array11 as $value) {
+	// code...
+print_r($value);
 
-            <h3>Авторизуйтесь</h3>
-            <form id="authForm" method="post">
-                <label for="login">Логин</label>
-                <input type="text" id="login" name="login" placeholder="Логин" required><br>
+}
 
-                <label for="password">Пароль</label>
-                <input type="password" id="password" name="password" placeholder="Пароль" required><br>
+// Объявляем массив
+$array = [
+    "apple",
+    "banana",
+    "cherry",
+    "date",
+    "elderberry"
+];
 
-                <button type="submit">Войти</button>
-            </form>
-
-    <script src="./scripts/auth.js"></script>
-</body>
-
-</html>
+// Выводим индекс и значение каждого элемента
+for ($i = 0; $i < count($array); $i++) {
+    echo "Индекс: $i, Значение: " . $array[$i] . "\n";
+}
